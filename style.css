@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey1: hsl(0, 0%, 20%);
+  --grey2: hsl(0, 0%, 12%);
+  --grey3: hsl(0, 0%, 8%);
+  --psize: 14px;
+}
+/* Container width = 350, height = 610, border-radius = 10px */
+/* Image width = 90, height = 90, border-radius : 50% */
+/* name = 25px */
+/* location = 14.5px */
+/* Quotation-content = 14px */
+/* Buttons width = 300px, height = 40px, border-radius = 5px */
+/* Gap between butons = 10px */
+/* Gap between image and name = 30px */
+/* Gap between name and location = 20px */
+/* Gap between location and Quotation-content = 30px */
+/* Gap betwee Quotation-content and first button = 25px */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey3);
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container {
+  width: 330px;
+  height: 610px;
+  background-color: var(--grey2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 40px;
+}
+
+.container .profile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .profile img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+
+/* Name-Location */
+.container .name-location {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.container .name-location .name {
+  font-size: 24px;
+  color: var(--white);
+}
+
+.container .name-location .location {
+  font-size: 14.5px;
+  color: var(--green);
+}
+
+/* Quotation-Content */
+.container .para .skills {
+  width: 100%;
+  margin-top: 20px;
+  color: hsl(0, 1%, 64%);
+  font-size: 11px;
+}
+
+/* buttons */
+.container .buttons {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .buttons .box {
+  width: 250px;
+  height: 45px;
+  background-color: var(--grey1);
+  border: transparent;
+  border-radius: 10px;
+  color: hsl(0, 0%, 85%);
+}
+
+.container .buttons .box:active {
+  background-color: var(--green);
+  color: var(--grey1);
+}
